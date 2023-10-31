@@ -13,8 +13,8 @@ namespace GuideMeCadastroTags.Utils
 
     static public class APIHelper
     {
-        private const string SiteURL = "https://guideme.azurewebsites.net";
-        //private const string SiteURL = "http://192.168.0.133:5254";
+        //private const string SiteURL = "https://guideme.azurewebsites.net";
+        private const string SiteURL = "http://192.168.1.16:5254";
         private const string LoginApi = "/api/Login/v1/login";
         private const string GetEstabelecimentoInfoAPI = "/api/Estabelecimento/v1/EstabInfo";
         private const string SalvarTagInfoAPI = "/api/Tag/v1/SalvarTag";

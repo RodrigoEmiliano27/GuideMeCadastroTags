@@ -12,8 +12,18 @@ namespace GuideMeCadastroTags.ViewModels
         public Command SalvarCommand { get; }
         public string Nome { get; set; }
 
-        
-        public string TagID { get; set; }
+        private string _TagID ;  // Backing store
+
+        public string TagID
+
+        {
+            get => _TagID;
+
+            set
+            {
+                _TagID = value.Replace(" ", "");
+            }
+        }
 
         public CadastroTagViewModel()
         {
